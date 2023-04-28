@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Technical Code</title>
+  </head>
+  <body>
+    <input type="text" id="inputAngka" name="inputAngka" /><br />
+    <button id="'segitiga" onclick="pola_segitiga()">Generate segitiga</button>
+    <button id="'ganjil" onclick="bilangan_ganjil()">Generate Bilangan Ganjil</button>
+    <button id="'prima" onclick="bilangan_prima()">Generate Bilangan Prima</button>
+    <script>
+      function pola_segitiga() {
+        let polasegitiga = parseInt(document.getElementById("inputAngka").value);
+        let res = int.split("");
+        res = document.getElementById("segitiga").innerHtml;
+        alert(res);
+      }
+
+      function bilangan_ganjil() {
+        let bilganjil = parseInt(document.getElementById("inputAngka").value);
+        if (bilganjil % 2 == 1) {
+          notif_ganjil = "Bilangan " + bilganjil + " Adalah Bilangan Ganjil";
+        } else {
+          notif_ganjil = "Bilangan " + bilganjil + " Adalah Bukan Bilangan Ganjil";
+        }
+        alert(notif_ganjil);
+      }
+
+      function bilangan_prima() {
+        let bilprima = parseInt(document.getElementById("inputAngka").value);
+        let pembagi = 0;
+        for (let i = 1; i <= bilprima; i++) {
+          if (bilprima % i == 0) {
+            pembagi++;
+          }
+        }
+        if (pembagi == 2) {
+          notif_prima = "Bilangan " + bilprima + " Adalah Bilangan Prima";
+        } else {
+          notif_prima = "Bilangan " + bilprima + " Adalah Bukan Bilangan Prima";
+        }
+        alert(notif_prima);
+      }
+    </script>
+  </body>
+</html>
